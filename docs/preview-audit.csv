@@ -1,0 +1,299 @@
+﻿id,name,group,checkedThisRound,count,status,localSnapshot,related,unit,scope,reason,registeredSource
+ahmedml,AhmedML,results,False,10,ready,False,False,一个几何案例的力／力矩摘要,,,https://huggingface.co/datasets/neashton/ahmedml
+airfrans,AirfRANS,results,True,10,related,True,True,一个AirfRANS气动案例的机翼表面点与物理属性,第三方公开镜像；原案例名及VTP布局与原版相符但未作原版逐文件校验；仅表面，不代表完整体积场。每个案例最多512源表面点与配对压力/速度/法线等。,,https://airfrans.readthedocs.io/en/latest/
+blastnet,BLASTNet 2.0,results,True,10,ready,True,False,同一个DNS案例中一个时刻的压力场局部切片,只提取每个时刻的x=首层面切片；不表示完整三维场或独立案例,,https://blastnet.github.io/
+cfdbench,CFDBench 原始流场,results,False,10,ready,False,False,所标明来源中的一条记录,,,https://huggingface.co/datasets/chen-yingfa/CFDBench-raw
+drivaerml,DrivAerML,results,False,10,ready,False,False,一个几何案例的力／力矩摘要,,,https://huggingface.co/datasets/neashton/drivaerml
+drivaer,DrivAerNet++,results,True,10,ready,True,False,一个车辆设计的参数记录,官方参数表；不包含完整车体几何和CFD场,,https://github.com/Mohamedelrefaie/DrivAerNet
+drivaerstar,DrivAerStar,results,True,10,ready,True,False,一个车辆几何／速度工况的阻力系数结果,官方发布的阻力结果摘要；不含完整CFD物理场,,https://drivaerstar.github.io/
+flowbench,FlowBench 流体仿真,results,True,10,ready,True,,源数组第一轴的一项及其受限切片；独立案例含义未核实,仅按源数组索引切片；截取范围写在每条记录，不推断未给出的轴、单位或物理工况。,,https://huggingface.co/datasets/BGLab/FlowBench
+jhtdb,JHTDB 湍流数据库,results,True,0,blocked,False,,,,官方页面明确提供数据库查询及HDF5 cutout服务；需要定义数据集、时空坐标和采样查询，尚未实际调用数据服务。不是只能完整下载，也不是无数据。,https://turbulence.idies.jhu.edu/home
+pdearena-maxwell,pdearena/Maxwell-3D,results,True,10,ready,True,,源数组第一轴的一项及其受限切片；独立案例含义未核实,仅按源数组索引切片；截取范围写在每条记录，不推断未给出的轴、单位或物理工况。,,https://huggingface.co/datasets/pdearena/Maxwell-3D
+pdearena-ns,pdearena/NavierStokes-2D,results,True,10,ready,True,,源数组第一轴的一项及其受限切片；独立案例含义未核实,仅按源数组索引切片；截取范围写在每条记录，不推断未给出的轴、单位或物理工况。,,https://huggingface.co/datasets/pdearena/NavierStokes-2D
+pdearena-cond,pdearena/NavierStokes-2D-conditoned,results,True,10,ready,True,,源数组第一轴的一项及其受限切片；独立案例含义未核实,仅按源数组索引切片；截取范围写在每条记录，不推断未给出的轴、单位或物理工况。,,https://huggingface.co/datasets/pdearena/NavierStokes-2D-conditoned
+pdebench,PDEBench,results,True,10,ready,True,,源数组第一轴的一项及其受限切片；独立案例含义未核实,仅按源数组索引切片；截取范围写在每条记录，不推断未给出的轴、单位或物理工况。,,https://github.com/pdebench/PDEBench
+well,The Well,results,True,10,ready,True,,源数组第1轴的一项及其受限切片；独立案例含义未核实,仅按源数组索引切片；截取范围写在每条记录，不推断未给出的轴、单位或物理工况。,,https://polymathic-ai.org/the_well/
+windsorml,WindsorML,results,False,10,ready,False,False,一个几何案例的力／力矩摘要,,,https://huggingface.co/datasets/neashton/windsorml
+bigearth,BigEarthNet v2,field,True,0,blocked,False,,,,METADATA_ONLY_NOT_PRIMARY_CONTENT,https://bigearth.net/
+canadamaps,Canada geological maps,field,True,1,partial,True,,一张源图像的缩略预览,顺序取前十条；不代表随机或独立样本。,,https://huggingface.co/datasets/komati-ai/canada-maps-dataset
+quarry,El Aljibe 采石场无人机爆破块度数据,field,True,10,ready,True,,源文件中的一条记录,顺序取前十条；不代表随机或独立样本。,,https://zenodo.org/records/10666378
+subsurface,Field-scale 3D subsurface benchmark,field,False,10,ready,False,False,所标明来源中的一条记录,,,https://huggingface.co/datasets/subsurfacegen/field-scale-dataset
+miningfoot,Global Mining Footprint,field,True,0,blocked,False,,,,已核查文件形式，尚未接入其压缩／专有格式解析器。 NO_SUPPORTED_PRIMARY_CONTENT_CANDIDATE,https://zenodo.org/records/7894216
+miningpolygons,Global-scale Mining Polygons v2,field,True,10,ready,True,False,一个国家的矿区面积与多边形数量汇总,原数据集附带的国别汇总；不包含单个矿区多边形坐标，必须明确为汇总预览。,,https://doi.pangaea.de/10.1594/PANGAEA.942325
+f3,Netherlands F3 地震解释基准,field,True,10,ready,True,,源文件中的一条记录,顺序取前十条；不代表随机或独立样本。,,https://zenodo.org/records/3755060
+openfwi,OpenFWI,field,True,10,ready,True,False,一个真实地下速度模型二维阵列,FlatVel-A官方model1.npy中的前10个70×70速度模型；若地震响应未取得则不宣称配对完整,,https://openfwi-lanl.github.io/docs/data.html
+opentopo,OSMRE Surface-Mine LiDAR,field,True,0,blocked,False,,,,已实际读取官方S3 pc-bulk目录，NM23_McKinley下有公开对象；首对象为13037B TileIndex.zip，不是LiDAR点数据。需枚举LAZ块并启用LAZ解码或小范围裁剪；不把瓦片索引作为点云样本。,https://portal.opentopography.org/lidarDataset?opentopoID=OTLAS.112024.6341.2
+sleipner,Sleipner 2019 CO2 benchmark,field,True,0,blocked,False,,,,官方CKAN API已给出多个真实ZIP资源，其中plume boundaries仅115781B；直接下载返回HTTP400。原页面明确要求同意数据专用许可证，未提交许可表单或确认下载，不将元数据算预览。,https://co2datashare.org/dataset/sleipner-2019-benchmark-model
+usgsmineral,USGS Spectral Library v7,field,True,0,blocked,False,,,,原1035地址实际为报告PDF目录，不是光谱文件。已回溯USGS官方说明与数据DOI10.5066/F7RR1WDJ，ScienceBase条目5807a2a2e4b0841e59e3a18d；该元数据端点本机未取得可用正文，仍需原始光谱包中的ASCII成员。,https://pubs.usgs.gov/ds/1035/
+namss,USGS-BOEM NAMSS 海洋地震数据库,field,True,0,blocked,False,,,,官网返回动态地图目录，客户端通过/namss/home/js/及地图服务选测线；64KiB页面未给出某一SEG-Y测线的稳定文件路径。需按survey/line定位二进制数据，再选择trace解析，当前不是权限已拒绝。,https://walrus.wr.usgs.gov/namss/
+volve,Volve 油田数据,field,True,10,related,True,True,一份Volve钻井日报结构化记录,第三方Volve日报子集，含现场活动；部分数值含-999.99缺失占位，不能视为有效实测值。,,https://www.equinor.com/energy/volve-data-sharing
+aflow,AFLOW 数据库,results,True,10,ready,True,False,官方数据库的一条材料摘要,当前在线记录的首十条，非完整原始计算轨迹,,https://aflow.org/
+alexandria,Alexandria 数据库,results,True,10,ready,True,False,一个计算晶体结构与能量的配对条目,2025.07.02 PBE首分片前十个完整entries；真实pymatgen结构含lattice/sites。解压在内存中限2MiB，无需读取61.6MB完整分片。,,https://alexandria.icams.rub.de/
+ani1x,ANI-1x / ANI-1ccx 联合数据,results,True,10,related,True,True,转换版本的一条真实原子结构与计算属性,ANI-1x第三方Parquet重排版本；不代表ANI-1ccx全部子集。未与原始版逐样本比对。,,https://github.com/aiqm/ANI1x_datasets
+chembl,ChEMBL,field,False,10,ready,False,False,一个化学分子条目,,,https://www.ebi.ac.uk/chembl/downloads
+cod,Crystallography Open Database,field,True,10,ready,True,False,COD原始晶体结构的元数据条目（晶胞/空间群/组成）,quartz关键字过滤的前十条真实结构元数据，不含完整CIF原子坐标,,https://www.crystallography.net/cod/
+jarvis-alignn_ff_db,JARVIS / alignn_ff_db,results,True,10,related,True,True,ColabFit整理的真实原子构型及性质记录,ColabFit明确标注JARVIS/OQMD来源的整理版；与注册原始分发不等同版本，字段标准化,,https://github.com/usnistgov/jarvis/blob/master/jarvis/db/figshare.py
+jarvis-c2db,JARVIS / c2db,results,True,10,related,True,True,ColabFit整理的真实原子构型及性质记录,ColabFit明确标注JARVIS来源的整理版；与注册原始ZIP不等同版本，字段标准化,,https://github.com/usnistgov/jarvis/blob/master/jarvis/db/figshare.py
+jarvis-dft_2d,JARVIS / dft_2d,results,True,10,related,True,True,ColabFit整理的真实原子构型及性质记录,ColabFit明确标注JARVIS/OQMD来源的整理版；与注册原始分发不等同版本，字段标准化,,https://github.com/usnistgov/jarvis/blob/master/jarvis/db/figshare.py
+jarvis-dft_3d,JARVIS · DFT 3D,results,True,10,related,True,True,ColabFit整理的真实原子构型及性质记录,ColabFit明确标注JARVIS/OQMD来源的整理版；与注册原始分发不等同版本，字段标准化,,https://github.com/usnistgov/jarvis/blob/master/jarvis/db/figshare.py
+jarvis-halide_peroskites,JARVIS / halide_peroskites,results,True,10,related,True,True,官方评测划分中的ID及真实目标数值,JARVIS官方评测目标子表，只有材料ID与目标值，不含原始原子结构/全属性,,https://github.com/usnistgov/jarvis/blob/master/jarvis/db/figshare.py
+jarvis-hmof,JARVIS / hmof,results,True,10,related,True,True,官方评测划分中的ID及真实目标数值,JARVIS官方评测目标子表，只有材料ID与目标值，不含原始原子结构/全属性,,https://github.com/usnistgov/jarvis/blob/master/jarvis/db/figshare.py
+jarvis-hopv,JARVIS / hopv,field,True,10,related,True,True,HOPV15 molecular experimental property record,DeepChem/MoleculeNet 350 experimental molecules; theoretical calculations removed. Not JARVIS 4855 computational conformers.,,https://github.com/usnistgov/jarvis/blob/master/jarvis/db/figshare.py
+jarvis-jff,JARVIS / jff,results,True,0,blocked,False,,,,已逐项检查官方分发，尚未找到兼容本地文件 CORS 且可受限解析的路径,https://github.com/usnistgov/jarvis/blob/master/jarvis/db/figshare.py
+jarvis-m3gnet_mpf_1.5mil,JARVIS / m3gnet_mpf_1.5mil,results,True,10,related,True,True,官方评测划分中的ID及真实目标数值,JARVIS官方评测目标子表，只有材料ID与目标值，不含原始原子结构/全属性；m3gnet为mpf评测版，非1.5mil原表,,https://github.com/usnistgov/jarvis/blob/master/jarvis/db/figshare.py
+jarvis-omdb,JARVIS / omdb,results,True,10,ready,True,False,JARVIS 官方分发中的一条材料记录,omdb 官方当前映射；顺序前缀真实记录,,https://github.com/usnistgov/jarvis/blob/master/jarvis/db/figshare.py
+jarvis-polymer_genome,JARVIS / polymer_genome,results,True,10,ready,True,False,JARVIS 官方分发中的一条材料记录,polymer_genome 官方当前映射；顺序前缀真实记录,,https://github.com/usnistgov/jarvis/blob/master/jarvis/db/figshare.py
+jarvis-qe_tb,JARVIS / qe_tb,results,True,10,related,True,True,ColabFit整理的真实原子构型及性质记录,ColabFit明确标注JARVIS/OQMD来源的整理版；与注册原始分发不等同版本，字段标准化,,https://github.com/usnistgov/jarvis/blob/master/jarvis/db/figshare.py
+jarvis-qmof,JARVIS / qmof,results,True,10,related,True,True,ColabFit整理的真实原子构型及性质记录,ColabFit明确标注JARVIS来源的整理版；与注册原始ZIP不等同版本，字段标准化,,https://github.com/usnistgov/jarvis/blob/master/jarvis/db/figshare.py
+jarvis-ssub,JARVIS / ssub,results,True,10,related,True,True,官方评测划分中的ID及真实目标数值,JARVIS官方评测目标子表，只有材料ID与目标值，不含原始原子结构/全属性,,https://github.com/usnistgov/jarvis/blob/master/jarvis/db/figshare.py
+jarvis-supercon_3d,JARVIS / supercon_3d,field,True,10,related,True,True,作者转换后的超导Tc指令记录,JARVIS作者转换为instruction/input/output任务，非原始结构表,,https://github.com/usnistgov/jarvis/blob/master/jarvis/db/figshare.py
+jarvis-twod_matpd,JARVIS / twod_matpd,results,True,10,ready,True,False,JARVIS 官方分发中的一条材料记录,twod_matpd 官方当前映射；顺序前缀真实记录,,https://github.com/usnistgov/jarvis/blob/master/jarvis/db/figshare.py
+materialsproject,Materials Project,results,True,10,related,True,True,转换版本的一条真实原子结构与计算属性,ColabFit整理的Materials Project版本；不等于当前主站全部字段与最新版本。未与原始版逐样本比对。,,https://docs.materialsproject.org/downloading-data/how-do-i-download-the-materials-project-database
+matminer-boltztrap_mp,Matminer / boltztrap_mp,results,False,10,ready,False,False,材料表的一条原始记录,,,https://github.com/hackingmaterials/matminer/blob/main/src/matminer/datasets/dataset_metadata.json
+matminer-brgoch_superhard_training,Matminer / brgoch_superhard_training,field,False,10,ready,False,False,材料表的一条原始记录,,,https://github.com/hackingmaterials/matminer/blob/main/src/matminer/datasets/dataset_metadata.json
+matminer-castelli_perovskites,Matminer / castelli_perovskites,results,False,10,ready,False,False,材料表的一条原始记录,,,https://github.com/hackingmaterials/matminer/blob/main/src/matminer/datasets/dataset_metadata.json
+matminer-citrine_thermal_conductivity,Matminer / citrine_thermal_conductivity,field,False,10,ready,False,False,材料表的一条原始记录,,,https://github.com/hackingmaterials/matminer/blob/main/src/matminer/datasets/dataset_metadata.json
+matminer-dielectric_constant,Matminer / dielectric_constant,results,False,10,ready,False,False,材料表的一条原始记录,,,https://github.com/hackingmaterials/matminer/blob/main/src/matminer/datasets/dataset_metadata.json
+matminer-double_perovskites_gap,Matminer / double_perovskites_gap,results,False,10,ready,False,False,材料表的一条原始记录,,,https://github.com/hackingmaterials/matminer/blob/main/src/matminer/datasets/dataset_metadata.json
+matminer-double_perovskites_gap_lumo,Matminer / double_perovskites_gap_lumo,results,False,10,ready,False,False,材料表的一条原始记录,,,https://github.com/hackingmaterials/matminer/blob/main/src/matminer/datasets/dataset_metadata.json
+matminer-elastic_tensor_2015,Matminer / elastic_tensor_2015,results,False,10,ready,False,False,材料表的一条原始记录,,,https://github.com/hackingmaterials/matminer/blob/main/src/matminer/datasets/dataset_metadata.json
+matminer-expt_formation_enthalpy_kingsbury,Matminer / expt_formation_enthalpy_kingsbury,field,False,10,ready,False,False,材料表的一条原始记录,,,https://github.com/hackingmaterials/matminer/blob/main/src/matminer/datasets/dataset_metadata.json
+matminer-expt_gap_kingsbury,Matminer / expt_gap_kingsbury,field,False,10,ready,False,False,材料表的一条原始记录,,,https://github.com/hackingmaterials/matminer/blob/main/src/matminer/datasets/dataset_metadata.json
+matminer-flla,Matminer / flla,results,False,10,ready,False,False,材料表的一条原始记录,,,https://github.com/hackingmaterials/matminer/blob/main/src/matminer/datasets/dataset_metadata.json
+matminer-glass_binary_v2,Matminer / glass_binary_v2,field,False,10,ready,False,False,材料表的一条原始记录,,,https://github.com/hackingmaterials/matminer/blob/main/src/matminer/datasets/dataset_metadata.json
+matminer-glass_ternary_hipt,Matminer / glass_ternary_hipt,field,False,10,ready,False,False,材料表的一条原始记录,,,https://github.com/hackingmaterials/matminer/blob/main/src/matminer/datasets/dataset_metadata.json
+matminer-glass_ternary_landolt,Matminer / glass_ternary_landolt,field,False,10,ready,False,False,材料表的一条原始记录,,,https://github.com/hackingmaterials/matminer/blob/main/src/matminer/datasets/dataset_metadata.json
+matminer-heusler_magnetic,Matminer / heusler_magnetic,results,False,10,ready,False,False,材料表的一条原始记录,,,https://github.com/hackingmaterials/matminer/blob/main/src/matminer/datasets/dataset_metadata.json
+matminer-m2ax,Matminer / m2ax,results,False,10,ready,False,False,材料表的一条原始记录,,,https://github.com/hackingmaterials/matminer/blob/main/src/matminer/datasets/dataset_metadata.json
+matminer-mp_all_20181018,Matminer / mp_all_20181018,results,False,10,ready,False,False,材料表的一条原始记录,,,https://github.com/hackingmaterials/matminer/blob/main/src/matminer/datasets/dataset_metadata.json
+matminer-phonon_dielectric_mp,Matminer / phonon_dielectric_mp,results,False,10,ready,False,False,材料表的一条原始记录,,,https://github.com/hackingmaterials/matminer/blob/main/src/matminer/datasets/dataset_metadata.json
+matminer-piezoelectric_tensor,Matminer / piezoelectric_tensor,results,False,10,ready,False,False,材料表的一条原始记录,,,https://github.com/hackingmaterials/matminer/blob/main/src/matminer/datasets/dataset_metadata.json
+matminer-ricci_boltztrap_mp_tabular,Matminer / ricci_boltztrap_mp_tabular,results,False,10,ready,False,False,材料表的一条原始记录,,,https://github.com/hackingmaterials/matminer/blob/main/src/matminer/datasets/dataset_metadata.json
+matminer-steel_strength,Matminer / steel_strength,field,False,10,ready,False,False,材料表的一条原始记录,,,https://github.com/hackingmaterials/matminer/blob/main/src/matminer/datasets/dataset_metadata.json
+matminer-superconductivity2018,Matminer / superconductivity2018,field,True,10,related,True,True,论文原作者发布的组成/临界温度记录,Stanev论文原作者CSV，与Matminer重新打包版本同论文来源，但未做行级一致性核查,,https://github.com/hackingmaterials/matminer/blob/main/src/matminer/datasets/dataset_metadata.json
+matminer-tholander_nitrides,Matminer / tholander_nitrides,results,True,10,related,True,True,材料性质表的一条记录,原论文Zn-Ti-N子表，非Matminer去重版本,,https://github.com/hackingmaterials/matminer/blob/main/src/matminer/datasets/dataset_metadata.json
+matminer-ucsb_thermoelectrics,Matminer / ucsb_thermoelectrics,field,False,10,ready,False,False,材料表的一条原始记录,,,https://github.com/hackingmaterials/matminer/blob/main/src/matminer/datasets/dataset_metadata.json
+matminer-wolverton_oxides,Matminer / wolverton_oxides,results,False,10,ready,False,False,材料表的一条原始记录,,,https://github.com/hackingmaterials/matminer/blob/main/src/matminer/datasets/dataset_metadata.json
+nasacomposites,NASA Composites,field,True,7,partial,True,,同一源信号中的连续256点窗口；不是独立实验,仅按源数组索引切片；截取范围写在每条记录，不推断未给出的轴、单位或物理工况。,,https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/pcoe/pcoe-data-set-repository/
+nomad,NOMAD Repository and Archive,results,True,10,ready,True,False,官方数据库的一条材料摘要,当前在线记录的首十条，非完整原始计算轨迹,,https://nomad-lab.eu/nomad-lab/
+omat,OMat24,results,True,10,related,True,True,转换版本的一条真实原子结构与计算属性,OMat24第三方Parquet转换版。未与原始版逐样本比对。,,https://huggingface.co/datasets/facebook/OMAT24
+oc20,Open Catalyst 2020,results,True,10,related,True,True,转换版本的一条真实原子结构与计算属性,ColabFit整理的OC20 S2EF 20M子集。未与原始版逐样本比对。,,https://github.com/facebookresearch/fairchem/blob/main/docs/catalysts/datasets/oc20.md
+oc22,Open Catalyst 2022,results,True,10,related,True,True,ColabFit转换版的一条OC22原子结构与属性,ColabFit格式转换与筛选版本，未与原始LMDB逐样本比对,,https://raw.githubusercontent.com/facebookresearch/fairchem/main/docs/catalysts/datasets/oc22.md
+omc25,Open Molecular Crystals 2025,results,False,10,ready,False,False,所标明来源中的一条记录,,,https://huggingface.co/datasets/facebook/OMC25
+omol25,Open Molecules 2025,results,True,10,related,True,True,转换版本的一条真实原子结构与计算属性,ColabFit整理的OMol25 4M训练子集转换版本。未与原始版逐样本比对。,,https://huggingface.co/facebook/OMol25
+oqmd,Open Quantum Materials Database,results,True,10,related,True,True,ColabFit整理的真实原子构型及性质记录,ColabFit明确标注JARVIS/OQMD来源的整理版；与注册原始分发不等同版本，字段标准化,,https://oqmd.org/
+polyone,polyOne,field,True,0,blocked,False,,,,TIME_BUDGET_EXCEEDED:40s,https://zenodo.org/records/7766806
+pubchem,PubChem 开放化学数据,results,False,10,ready,False,False,一个化学分子条目,,,https://ftp.ncbi.nlm.nih.gov/pubchem/Compound/CURRENT-Full/SDF/
+qm9,QM9,results,False,10,related,False,True,所标明来源中的一条记录,,,https://doi.org/10.6084/m9.figshare.c.978904.v5
+respecth,ReSpecTh,field,True,0,blocked,False,,,,原站明确多数内容需免费注册；公开RKD格式页另有11个XML实验样例。页面使用Vue动态加载，本轮未定位XML实际下载请求。可继续接公开示例，不能笼统说整个数据平台均需登录。,https://respecth.elte.hu/
+rruff,RRUFF 光谱与矿物数据库,field,True,10,ready,True,False,一份真实RRUFF拉曼光谱文件,官方excellent_unoriented包首部完整谱图，波数/强度来自源文件,,https://www.rruff.net/about/download-data/
+sciglass,SciGlass,field,True,0,blocked,False,,,,"官方select.zip中只有select.MDB，展开1,012,367,360字节；Property.zip仅属性字典。Access数据库需要页索引与表关联解码，当前没有取得真实玻璃性质行；未下载或展开整个数据库。",https://github.com/epam/SciGlass
+spice,SPICE 2.0 数据集,results,True,0,blocked,False,,,,"{'type': 'parquet', 'reason': 'MIN_DECODE_UNIT_TOO_LARGE'}",https://zenodo.org/records/10835749
+heatmeters,Aalborg Smart Heat Meters,field,True,10,ready,True,,源文件中的一条记录,顺序取前十条；不代表随机或独立样本。,,https://zenodo.org/records/6563114
+ampds,AMPds2,field,True,0,blocked,False,,,,旧文件清单含与AMPds主题无关的生态图像，已排除。需重新核对官方用电数据入口。,https://makonin.com/ampds/
+appliances,Appliances Energy Prediction,field,True,10,ready,True,False,源文件一行记录,顺序前十条真实记录；并非随机样本,,https://archive.ics.uci.edu/dataset/374
+bdg,Building Data Genome 2,field,True,10,ready,True,,压缩包中一张源图像的512px缩略图,顺序取前十条；不代表随机或独立样本。,,https://zenodo.org/records/3887306
+comstock,ComStock 建筑能耗模拟数据,results,True,10,ready,True,,Parquet源表的一条记录,首个可读行组前十条、前十二列；不代表全库分布。,,https://comstock.nlr.gov/page/datasets
+eco,ECO 用电数据,field,True,0,blocked,False,,,,官网存在每家庭CSV/MATLAB ZIP链接和ETH归档入口，目录中两个官方主机的01_sm_csv.zip均404；互动分块仪表盘另需联系作者取得凭证。旧链接失效不等于全部归档消失。,https://vs.inf.ethz.ch/res/show.html?what=eco-data
+electricity,ElectricityLoadDiagrams20112014,field,True,10,ready,True,False,同一时刻370个客户的用电记录,首成员ZIP使用data descriptor，local header长度为0；必须直接流式deflate前缀解码。已由256KiB源前缀解出173行含表头，371列,,https://archive.ics.uci.edu/dataset/321
+energybenchmark,Energy Efficiency,results,True,10,ready,True,False,源文件一行记录,顺序前十条真实记录；并非随机样本,,https://archive.ics.uci.edu/dataset/242
+hipe,HIPE,field,True,0,blocked,False,,,,受限归档读取未得到可解析的数据成员；目录与说明文件未计为样本。 ZIP_NO_VALID_CONTENT:[],https://www.energystatusdata.kit.edu/hipe.php
+mortar,Mortar 建筑自控与语义数据,field,True,3,partial,True,,Parquet源表的一条记录,首个可读行组前十条、前十二列；不代表全库分布。,,https://huggingface.co/datasets/gtfierro/mortar
+opsd,Open Power System Data 时间序列,field,True,10,ready,True,False,一个小时的跨国电力指标,顺序前十条真实记录；并非随机样本,,https://data.open-power-system-data.org/time_series/2020-10-06
+plaid,PLAID 电器电流电压数据,field,True,0,blocked,False,,,,已由原始论文开放全文PMC7015894核实：PLAID2014、2017、2018分别在Figshare三个原数据DOI；真实波形为编号CSV，也提供plaid.hdf5，metadata JSON为配套说明。仍需Figshare文件ID与可下载正文，不能仅把JSON元数据当电流电压波形。,https://www.nature.com/articles/s41597-020-0389-7?error=cookies_not_supported&code=726a5c01-e2ff-4912-a9a4-ae4bd7a8b664
+refit,REFIT 原始用电数据,field,True,0,blocked,False,,,,原大学页面明确给出REFITPowerData111215.7z、REFIT_RAW_081116.7z及MetaData_Tables.xlsx；轨迹存7z，需先核实压缩块与最低解压量。元数据表不能代替原电力轨迹。,https://pureportal.strath.ac.uk/en/datasets/refit-electrical-load-measurements/
+resstock,ResStock 建筑能耗模拟数据,results,True,10,ready,True,,Parquet源表的一条记录,首个可读行组前十条、前十二列；不代表全库分布。,,https://natlabrockies.github.io/ResStock.github.io/docs/data.html
+steelenergy,Steel Industry Energy Consumption,field,True,10,ready,True,False,源文件一行记录,顺序前十条真实记录；并非随机样本,,https://archive.ics.uci.edu/dataset/851
+ukdale,UK-DALE 2017 分设备数据,field,True,10,related,True,True,一个通道功率时间戳记录,第三方UK-DALE分设备转换版；单个channel22文件，原值一致性未核验。,,https://jack-kelly.com/data/
+autorule,ART 建筑防火规范数据,textcode,False,10,ready,False,False,带标注的规范句子,,,https://github.com/smartaec/auto-rule-transform
+industrycorpus,IndustryCorpus2,textcode,True,10,related,True,True,英文随机筛选子集的一条真实工业语料,非官方整理的百万条英文高分样本；从100个英文high质量文件随机取样并打乱，不代表原版全部语言与行业。,,https://huggingface.co/datasets/BAAI/IndustryCorpus2
+industryinstruction,IndustryInstruction,textcode,True,10,related,True,True,清洗筛选后的一条真实中文工业指令问答,Mxode从BAAI/IndustryInstruction提取并清洗的中文子集，保留较高DEITA/reward分数部分；不是原版全部语言和领域，未逐样本核对,,https://huggingface.co/datasets/BAAI/IndustryInstruction
+bigpatent,BIGPATENT,textcode,False,10,ready,False,False,所标明来源中的一条记录,,,https://huggingface.co/datasets/NortheasternUniversity/big_patent
+chembench,ChemBench,textcode,False,10,ready,False,False,所标明来源中的一条记录,,,https://github.com/lamalab-org/chembench
+chembench4k,ChemBench4K,textcode,False,10,ready,False,False,所标明来源中的一条记录,,,https://huggingface.co/datasets/AI4Chem/ChemBench4K
+chemdata,ChemData700K,textcode,False,10,ready,False,False,所标明来源中的一条记录,,,https://huggingface.co/datasets/AI4Chem/ChemData700K
+chemref,ChEmREF,textcode,False,10,ready,False,False,源文件中的一行记录,,,https://github.com/dill-lab/ChEmREF
+chinesepatents,Chinese Patents · 1985–2025,textcode,False,10,ready,False,False,源文件中的一行记录,,,https://huggingface.co/datasets/LiuHongwei1992/ChinesePatentsFrom1985to2025
+coalmineqa,Coal-Mine-safety-Q-A-Data,textcode,False,10,ready,False,False,原始问答条目,,,https://github.com/lizongyu1293306035/Coal-Mine-safety-Q-A-Data
+coalqa,CoalQA,textcode,False,10,ready,False,False,法规原文中的非空文本行（非问答对）,,,https://github.com/yaosenJ/CoalQA
+enginertqa,EngineMT-QA,textcode,True,10,ready,True,,源文件中的一条记录,顺序取前十条；不代表随机或独立样本。,,https://huggingface.co/datasets/pandalin98/EngineMT-QA
+patents,Google Patents Public Data,textcode,True,10,related,True,True,一篇真实工业机器人或机床专利的摘要,Google Patents公开文档页面；未核对BigQuery同一版本与行号，不代表完整专利正文,,https://github.com/google/patents-public-data
+hupd,Harvard USPTO Patent Dataset,textcode,True,10,ready,True,,源文件中的一条记录,顺序取前十条；不代表随机或独立样本。,,https://huggingface.co/datasets/HUPD/hupd
+synthmaint,Industrial Maintenance Synthetic,textcode,False,10,ready,False,False,所标明来源中的一条记录,,,https://huggingface.co/datasets/Jvachier/industrial-maintenance-synthetic
+qtearchive,Industrial Technical Archive,textcode,False,10,ready,False,False,所标明来源中的一条记录,,,https://huggingface.co/datasets/QTE-Technologies/industrial-technical-archive
+panasonicqa,Industrial Instruction · Panasonic,textcode,False,10,ready,False,False,所标明来源中的一条记录,,,https://huggingface.co/datasets/Parssky/industrial-instruction-dataset
+maintnet,MaintNet,textcode,True,10,ready,True,False,一条航空维护问题与处理动作记录,MaintNet官方去标识航空维护子集；不是所有航空/车辆/设施子库。,,https://people.rit.edu/fa3019/MaintNet/datasets.html
+maintnorm,MaintNorm,textcode,False,10,ready,False,False,空行分隔的维修文本归一化序列,,,https://github.com/nlp-tlp/maintnorm
+minesafetyqa,MineSafety-QA,textcode,False,10,ready,False,False,所标明来源中的一条记录,,,https://huggingface.co/datasets/FateDefier/MineSafety-QA-Dataset
+stcoder,ST-Coder,textcode,False,10,ready,False,False,所标明来源中的一条记录,,,https://huggingface.co/datasets/RnniaSnow/iec61131-3-st-clean-augment
+batadal,BATADAL,field,False,10,ready,False,False,源文件中的一行记录,,,https://www.batadal.net/data.html
+dnp3,DNP3 Intrusion Detection,field,True,0,blocked,False,,,,已核查文件形式，尚未接入其压缩／专有格式解析器。 NO_SUPPORTED_PRIMARY_CONTENT_CANDIDATE,https://zenodo.org/records/7348493
+edgeiiot,Edge-IIoTset,field,True,10,related,True,True,一条网络通信特征及攻击标签,Edge-IIoT第三方ML特征子集,,https://ieee-dataport.org/documents/edge-iiotset-new-comprehensive-realistic-cyber-security-dataset-iot-and-iiot-applications
+epic,EPIC 电力系统安全数据,field,True,0,blocked,False,,,,SUTD官方Request for datasets表单明确包含EPIC，需要姓名、组织、机构邮箱并同意条款及个人信息处理，最多三工作日审核。本轮未代表用户提交申请。,https://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/epic/
+hai,HAI 23.05,field,False,10,ready,False,False,源文件中的一行记录,,,https://github.com/icsdataset/hai
+swat,SWaT 2023 联合运行 PCAP,field,True,0,blocked,False,,,,SUTD官方Request for datasets表单明确包含SWaT，需要姓名、组织、机构邮箱并同意条款及个人信息处理。本轮未提交申请，不能通过少量下载绕过申请。,https://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/swat/
+toniot,TON_IoT,field,True,10,related,True,True,一条Modbus四类寄存器遥测及攻击标签,第三方训练测试子集,,https://research.unsw.edu.au/projects/toniot-datasets
+wadi,WaDi 2023 联合运行 PCAP,field,True,0,blocked,False,,,,SUTD官方Request for datasets表单明确包含WADI，需要姓名、组织、机构邮箱并同意条款及个人信息处理。本轮未提交申请。,https://www.sutd.edu.sg/itrust/itrust-labs/datasets/
+xiiotid,X-IIoTID,field,True,10,ready,True,False,一个IIoT流量／主机活动特征记录,作者Muna Al-Hawawreh Kaggle副本，当前版本；与GitHub目录中CloudStor旧文件版本未逐字校验,,https://api.github.com/repos/Alhawawreh/X-IIoTID/readme
+agibot,AgiBot World Beta,field,True,0,blocked,False,,,,已核查文件形式，尚未接入其压缩／专有格式解析器。 NO_SUPPORTED_PRIMARY_CONTENT_CANDIDATE,https://huggingface.co/datasets/agibot-world/AgiBotWorld-Beta
+handal,BOP / HANDAL,field,True,10,ready,True,,一个源几何文件的受限顶点预览,只显示已读取的源顶点；不补全曲面，不把顶点当作独立案例。,,https://huggingface.co/datasets/bop-benchmark/handal
+hb,BOP / HB,field,True,10,ready,True,,一个源几何文件的受限顶点预览,只显示已读取的源顶点；不补全曲面，不把顶点当作独立案例。,,https://huggingface.co/datasets/bop-benchmark/hb
+icbin,BOP / ICBIN,field,True,4,partial,True,,一个源几何文件的受限顶点预览,只显示已读取的源顶点；不补全曲面，不把顶点当作独立案例。,,https://huggingface.co/datasets/bop-benchmark/icbin
+icmi,BOP / ICMI,field,True,10,ready,True,,一个源几何文件的受限顶点预览,只显示已读取的源顶点；不补全曲面，不把顶点当作独立案例。,,https://huggingface.co/datasets/bop-benchmark/icmi
+itodd,BOP / ITODD,field,True,10,ready,True,,一个源几何文件的受限顶点预览,只显示已读取的源顶点；不补全曲面，不把顶点当作独立案例。,,https://huggingface.co/datasets/bop-benchmark/itodd
+lm,BOP / LM,field,True,10,ready,True,,一个源几何文件的受限顶点预览,只显示已读取的源顶点；不补全曲面，不把顶点当作独立案例。,,https://huggingface.co/datasets/bop-benchmark/lm
+ocdit,BOP / OCDIT,field,False,10,ready,False,False,所标明来源中的一条记录,,,https://huggingface.co/datasets/bop-benchmark/ocdit
+ruapc,BOP / RUAPC,field,True,10,ready,True,,一个源几何文件的受限顶点预览,只显示已读取的源顶点；不补全曲面，不把顶点当作独立案例。,,https://huggingface.co/datasets/bop-benchmark/ruapc
+tudl,BOP / TUDL,field,True,6,partial,True,,一个源几何文件的受限顶点预览,只显示已读取的源顶点；不补全曲面，不把顶点当作独立案例。,,https://huggingface.co/datasets/bop-benchmark/tudl
+tyol,BOP / TYOL,field,False,10,ready,False,False,所标明来源中的一条记录,,,https://huggingface.co/datasets/bop-benchmark/tyol
+xyzibd,BOP / XYZIBD,field,True,10,ready,True,,一个源几何文件的受限顶点预览,只显示已读取的源顶点；不补全曲面，不把顶点当作独立案例。,,https://huggingface.co/datasets/bop-benchmark/xyzibd
+ycbv,BOP / YCBV,field,True,10,ready,True,,一个源几何文件的受限顶点预览,只显示已读取的源顶点；不补全曲面，不把顶点当作独立案例。,,https://huggingface.co/datasets/bop-benchmark/ycbv
+droid,DROID 机器人操作数据,field,True,0,blocked,False,,,,官方数据在GCS TFRecord分片，既有清单含dataset_info/features和实际分片；主审计按TFRecord记录边界解码，元数据不算轨迹预览。,https://raw.githubusercontent.com/droid-dataset/droid/main/docs/the-droid-dataset.md
+euroc,EuRoC MAV,field,True,10,related,True,True,cam0的一张真实相机帧缩略图,同一EuRoC V1_01_easy序列的前十帧；不代表十个独立轨迹，也未与IMU配对,,https://ethz-asl.github.io/datasets/euroc-mav/
+industryshapes,IndustryShapes 工业装配零件,field,True,10,ready,True,,压缩包中一张源图像的512px缩略图,顺序取前十条；不代表随机或独立样本。,,https://zenodo.org/records/14616198
+ipd,Intrinsic IPD,field,True,10,ready,True,,一个源几何文件的受限顶点预览,只显示已读取的源顶点；不补全曲面，不把顶点当作独立案例。,,https://github.com/intrinsic-ai/ipd
+kitti,KITTI Odometry,field,True,0,blocked,False,,,,官方里程计页面可访问，但64KiB主要为导航和榜单，未验证底部数据包或单帧文件；需官方下载入口及最小序列文件，不能用榜单结果充作轨迹。,https://www.cvlibs.net/datasets/kitti/eval_odometry.php
+robomind,RoboMIND,field,True,10,related,True,True,机器人任务一个时间步的观测与动作记录,BAAI-DataCube发布的RoboMIND agilex摆盘单任务LeRobot转换子集；非全量RoboMIND。,,https://huggingface.co/datasets/x-humanoid-robomind/RoboMIND
+rocoassembly,RoCo · Task Board Assembly,field,False,10,ready,False,False,平台视频预览条目，非完整作业 episode,,,https://huggingface.co/datasets/SharpaIT/RoCo_TaskBoardAssembly
+tless,T-LESS,field,True,10,ready,True,,一个源几何文件的受限顶点预览,只显示已读取的源顶点；不补全曲面，不把顶点当作独立案例。,,https://cmp.felk.cvut.cz/t-less/
+tum,TUM RGB-D,field,True,10,ready,True,,一张源图像的缩略预览,顺序取前十条；不代表随机或独立样本。,,https://cvg.cit.tum.de/data/datasets/rgbd-dataset/download
+ai4i,AI4I 2020 Predictive Maintenance,results,True,10,ready,True,False,源文件一行记录,顺序前十条真实记录；并非随机样本,,https://archive.ics.uci.edu/dataset/601
+aps,APS Failure at Scania Trucks,field,True,10,ready,True,False,一辆卡车的APS故障分类特征向量,首成员测试集；须跳过20行许可证正文再识别171列字段，不可把许可证计为数据,,https://archive.ics.uci.edu/dataset/421
+care,CARE · 风机 SCADA,field,True,10,ready,True,,源文件中的一条记录,顺序取前十条；不代表随机或独立样本。,,https://zenodo.org/records/15846963
+hydraulic,Condition Monitoring of Hydraulic Systems,field,True,10,ready,True,False,一个试验循环的CE传感器采样向量,仅CE通道的独立循环，不含故障标签和完整多传感器数据；已成功解压2205行,,https://archive.ics.uci.edu/dataset/447
+cwru,CWRU Bearing Data,field,True,10,ready,True,,同一源信号中的连续256点窗口；不是独立实验,仅按源数组索引切片；截取范围写在每条记录，不推断未给出的轴、单位或物理工况。,,https://engineering.case.edu/bearingdatacenter/download-data-file
+res-nist-robot2,Degradation Measurement of Robot Arm Position Accuracy,field,True,0,blocked,False,,,,原入口元数据可访问，但当前环境源文件下载服务持续超时；未取得内容，待重试。,https://www.nist.gov/el/intelligent-systems-division-73500/degradation-measurement-robot-arm-position-accuracy
+femto,FEMTO-ST / PRONOSTIA,field,True,10,ready,True,,源文件中的一条记录,顺序取前十条；不代表随机或独立样本。,,https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/pcoe/pcoe-data-set-repository/
+elevatordoor,Huawei 电梯门预测性维护,field,True,10,ready,True,,源文件中的一条记录,顺序取前十条；不代表随机或独立样本。,,https://zenodo.org/records/3653909
+hustbearing,HUSTbearing,field,True,10,ready,True,False,一个真实时间采样时刻,官方文本表，5列；第二列Speed无意义，工况按文件名20Hz，首列时间与三轴振动；十行不是十个独立实验,,https://github.com/CHAOZHAO-1/HUSTbearing-dataset
+hustmotor,HUSTmotor,field,True,10,ready,True,False,一个真实时间采样时刻,官方5列真实采样：时间、三轴振动和声学信号；单工况10Hz；十行不是十个独立实验,,https://github.com/CHAOZHAO-1/HUSTmotor-multi-modal-dataset
+jnu,JNU Bearing,field,False,10,ready,False,False,源文件中的一行记录,,,https://github.com/ClarkGableWang/JNU-Bearing-Dataset
+res-nist-robot1,Linear Axis Testbed - Rail Degradation Experiment 01,field,True,0,blocked,False,,,,原入口元数据可访问，但当前环境源文件下载服务持续超时；未取得内容，待重试。,https://data.nist.gov/od/id/6EF435207EF17114E0532457068155831934
+metropt,MetroPT-3,field,True,10,ready,True,False,一时刻空气压缩机多传感器记录,前一个成员是PDF，必须跳到第二CSV；取十个时刻，不是十次独立故障,,https://archive.ics.uci.edu/dataset/791
+mimiidg,MIMII DG,field,True,10,ready,True,,一个真实音频文件的前256点波形,源PCM首通道的短窗口，不表示完整音频或独立故障事件。,,https://zenodo.org/records/6529888
+mimiidue,MIMII DUE,field,True,10,ready,True,,一个真实音频文件的前256点波形,源PCM首通道的短窗口，不表示完整音频或独立故障事件。,,https://zenodo.org/records/4740355
+mimii,MIMII Industrial Machine Sounds,field,True,10,related,True,True,一个泵录音的浮点波形,第三方MIMII泵子集转换；1条响应约3.28MB，应逐条length=1读取并截取实际波形。,,https://zenodo.org/records/3384388
+cmapss,NASA C-MAPSS,results,False,10,related,False,True,所标明来源中的一条记录,,,https://catalog.data.gov/dataset/cmapss-jet-engine-simulated-data
+capacitor,NASA Capacitor Electrical Stress,field,True,0,blocked,False,,,,受限归档读取未得到可解析的数据成员；目录与说明文件未计为样本。 ZIP_NO_VALID_CONTENT:[],https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/pcoe/pcoe-data-set-repository/
+igbt,NASA IGBT Accelerated Aging,field,True,10,ready,True,,源文件中的一条记录,顺序取前十条；不代表随机或独立样本。,,https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/pcoe/pcoe-data-set-repository/
+ims,NASA IMS Bearings,field,True,0,blocked,False,,,,受限归档读取未得到可解析的数据成员；目录与说明文件未计为样本。 ZIP_NO_VALID_CONTENT:[],https://data.nasa.gov/dataset/ims-bearings
+mosfet,NASA MOSFET Thermal Overstress,field,True,3,partial,True,,同一源信号中的连续256点窗口；不是独立实验,仅按源数组索引切片；截取范围写在每条记录，不推断未给出的轴、单位或物理工况。,,https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/pcoe/pcoe-data-set-repository/
+cmapss2,NASA N-CMAPSS / C-MAPSS-2,results,True,0,blocked,False,,,,受限归档读取未得到可解析的数据成员；目录与说明文件未计为样本。 ZIP_NO_VALID_CONTENT:[],https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/pcoe/pcoe-data-set-repository/
+paderborn,Paderborn · Bearing,field,True,0,blocked,False,,,,已核查文件形式，尚未接入其压缩／专有格式解析器。 NO_SUPPORTED_PRIMARY_CONTENT_CANDIDATE,https://mb.uni-paderborn.de/en/kat/research/bearing-datacenter
+printingunit,Printing Unit 状态监测,field,True,0,blocked,False,,,,官方API和官方文件直链均HTTP403；不是容量问题。换网络或获授权后再核验，不使用不明镜像。,https://zenodo.org/records/55227
+res-nist-robot3,Process and robot data from a two robot workcell representative performing representative manufacturing operations.,field,True,0,blocked,False,,,,原入口元数据可访问，但当前环境源文件下载服务持续超时；未取得内容，待重试。,https://data.nist.gov/od/id/mds2-2361
+secom,SECOM,field,True,10,ready,True,False,一个生产样本的传感器向量,仅secom.data特征向量；尚未配对secom_labels.data标签，不能显示为已标注故障样本,,https://archive.ics.uci.edu/dataset/179
+skab,SKAB,field,False,10,ready,False,False,源文件中的一行记录,,,https://github.com/waico/SKAB
+stawfd,ST-AWFD,field,True,10,ready,True,False,一个批次／步骤中的一个真实时间采样,D2首部10个时间采样；不是10个批次,,https://github.com/STMicroelectronics/ST-AWFD
+thufdd,THUFDD 多模式 TE 过程,results,True,10,ready,True,False,模式1故障06轨迹中的一个时刻；不是独立故障案例,单个真实MAT过程轨迹；先核查数组轴再取10行,,https://github.com/THUFDD/Multi-mode-Fault-Diagnosis-Datasets-with-TE-process
+toyadmos2,ToyADMOS2,field,True,10,ready,True,,源文件中的一条记录,顺序取前十条；不代表随机或独立样本。,,https://zenodo.org/records/4580270
+scadawind,Wind Turbine SCADA Early Fault Detection,field,True,0,blocked,False,,,,受限归档读取未得到可解析的数据成员；目录与说明文件未计为样本。 ZIP_NO_VALID_CONTENT:[],https://zenodo.org/records/14958989
+xjtusy,XJTU-SY Bearing,field,True,10,related,True,True,一个轴承振动分段及两方向波形,第三方XJTU-SY处理版；horizontal_raw及vertical_raw为JSON数组字符串，原幅值一致性未核实。,,https://biaowang.tech/xjtu-sy-bearing-datasets/
+zema,ZeMA 电动缸退化数据,field,True,0,blocked,False,,,,TIME_BUDGET_EXCEEDED:40s,https://zenodo.org/records/3929384
+field-flashbattery-agv,Automated Battery Power Fade Estimation for Fast Charge/Discharge,field,True,10,ready,True,,源文件中的一条记录,顺序取前十条；不代表随机或独立样本。,,https://zenodo.org/records/7748947
+field-bilfinger2026,Battery pack diagnostics for EVs: Robustness of SOH and differential voltage,field,True,0,blocked,False,,,,mediaTUM1840112返回HTTP200但正文是Anubis挑战而非数据页面；不将挑战页当数据，也未绕过反机器人验证。,https://mediatum.ub.tum.de/1840112
+calce,CALCE Battery Data,field,True,10,ready,True,False,CS2_8电池同一次文件中的一个采样时刻,只展示CS2_8/CS2_8_1_19_10.txt时刻；不能把十行称作十个电池或十个循环。,,https://web.calce.umd.edu/batteries/data/
+degradationpath,Degradation Path Indicators,field,True,10,ready,True,,工作簿首个表中的数据行,工作表 Sheet1；可能含说明行，字段与单位需核对。,,https://zenodo.org/records/15755725
+field-schaeffer,Gaussian process-based online health monitoring and fault analysis from field data,field,True,10,ready,True,,源文件中的一条记录,顺序取前十条；不代表随机或独立样本。,,https://zenodo.org/records/13715694
+hustbattery,HUST LFP Battery,field,True,0,blocked,False,,,,受限归档读取未得到可解析的数据成员；目录与说明文件未计为样本。 ZIP_NO_VALID_CONTENT:[],https://data.mendeley.com/datasets/nsc7hnsg4s/2
+field-li2026,Large language model-based fault diagnosis for Li-ion batteries in cloud-edge systems,field,True,10,ready,True,,源文件中的一条记录,顺序取前十条；不代表随机或独立样本。,,https://zenodo.org/records/18471156
+libad,LIBAD,field,True,0,blocked,False,,,,公开接口返回401；需核对访问权限或接口状态，未取得内容。 SOURCE_HTTP_401,https://huggingface.co/datasets/Evenrose/LIBAD
+severson,MATR 电池早期寿命数据,field,True,0,blocked,False,,,,data.matr.io/1原入口TLSV1_ALERT_PROTOCOL_VERSION，未取得页面或数据列表；属于本机与来源握手失败，尚未证明必须完整下载。,https://data.matr.io/1/
+field-cloverleaf,Monitoring data second-life battery at Cloverleaf,field,True,10,ready,True,,工作簿首个表中的数据行,工作表 SP1ES110LC8076；可能含说明行，字段与单位需核对。,,https://zenodo.org/records/6373656
+field-changan,Multi-modal framework for battery SOH evaluation using open-source EV data,field,True,0,blocked,False,,,,原长安实验室文章可访问并跳转HTTPS，但64KiB有界正文未给出可直接读取的电池CSV/MAT文件。需文章正文或附件入口，未用无关电池集替换。,http://ivstskl.changan.com.cn/?p=2697
+hirfbattery,NASA HIRF Battery,field,True,10,ready,True,,同一源信号中的连续256点窗口；不是独立实验,仅按源数组索引切片；截取范围写在每条记录，不推断未给出的轴、单位或物理工况。,,https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/pcoe/pcoe-data-set-repository/
+nasabattery,NASA Li-ion Battery Aging,field,True,10,ready,True,,同一源信号中的连续256点窗口；不是独立实验,仅按源数组索引切片；截取范围写在每条记录，不推断未给出的轴、单位或物理工况。,,https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/pcoe/pcoe-data-set-repository/
+randomizedbattery,NASA Randomized Battery Usage,field,True,0,blocked,False,,,,受限归档读取未得到可解析的数据成员；目录与说明文件未计为样本。 ZIP_NO_VALID_CONTENT:[],https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/pcoe/pcoe-data-set-repository/
+oxford,Oxford Battery Degradation Dataset 1,field,True,10,ready,True,False,官方示例放电曲线的连续点窗口,官方 ExampleDC_C1 样例；不是十个独立电芯,,https://ora.ox.ac.uk/objects/uuid:03ba4b01-cfed-46d3-9b1a-7d4a7bdf6fac
+field-deng,Prognostics of battery capacity based on charging data for on-road vehicles,field,True,0,blocked,False,,,,官方仓库提供20个独立车辆RAR包，每个约10–12MB；没有逐行文件。需RAR解码器流式解出首个成员，再核实字段和工况，未取得真实记录。,https://github.com/BatICM/battery-charging-data-of-on-road-electric-vehicles
+field-zhou2026,Quantifying the impact of cell-to-cell inconsistency on EV battery degradation & utilization,field,True,0,blocked,False,,,,原1drv.ms共享链接TLS EOF，未取得文件夹列表；需要可访问的正式OneDrive文件路径。,https://1drv.ms/u/c/909aeacce295a32a/IQCsGxZgHovYTqJEXhfqRIIZAWASy12k6Urytil7VPa0LJY?e=ISLuvO
+field-fei_bus,Real EV dataset - Commercial Electric Buses,field,False,10,ready,False,False,源文件中的一行记录,,,https://doi.org/10.17632/j9ky68gnd3.3
+field-xie,Realistic multi-fault diagnostics of millions-scale Li-ion batteries with rapid unsupervised learning,field,True,0,blocked,False,,,,已核查文件形式，尚未接入其压缩／专有格式解析器。 NO_SUPPORTED_PRIMARY_CONTENT_CANDIDATE,https://zenodo.org/records/18328701
+homebattery,RWTH 多年户用储能实测,field,True,10,ready,True,,源文件中的一条记录,顺序取前十条；不代表随机或独立样本。,,https://zenodo.org/records/12091223
+tjubattery,TJU 电池电压弛豫数据,field,True,10,ready,True,,工作簿首个表中的数据行,工作表 1_1RCPE；可能含说明行，字段与单位需核对。,,https://zenodo.org/records/6405084
+field-ku_leuven_bev,Unveiling Energy Dynamics of Battery Electric Vehicle Using High-Resolution Data,field,True,4,partial,True,,源文件中的一条记录,顺序取前十条；不代表随机或独立样本。,,https://doi.org/10.48804/8KPDTW
+field-ppl,Utility-Scale Battery Energy Storage Systems - Field Pilot Unit Experience,field,True,10,ready,True,False,一个储能站运行采样时刻,官方Git LFS储能运行表前缀；不表示完整年度覆盖,,https://github.com/PPLResearch/BESS-Analysis
+xjtubattery,XJTU 锂电池退化数据,field,True,0,blocked,False,,,,受限归档读取未得到可解析的数据成员；目录与说明文件未计为样本。 ZIP_NO_VALID_CONTENT:[],https://zenodo.org/records/10963339
+age21700,商业 21700 电芯循环老化,field,True,0,blocked,False,,,,源站返回429限流，待冷却后重试。 SOURCE_HTTP_429,https://zenodo.org/records/10637534
+field-aitio,离网太阳能系统电池寿命实测（Aitio）,field,True,10,ready,True,False,一个实测电池系统的激活、状态与寿命条目,真实设备寿命元数据表，非电流电压轨迹；配套set_0.zip为ZIP套NPZ，需要额外安全数值解析，不应把元数据绘成电池时序。,,https://ora.ox.ac.uk/objects/uuid:e41d3d4c-f74e-4d76-81fd-0caa77ec6cec
+field-cao,随机工况下锂电池在线故障诊断（Cao）,field,True,0,blocked,False,,,,受限归档读取未得到可解析的数据成员；目录与说明文件未计为样本。 ZIP_NO_VALID_CONTENT:[],https://zenodo.org/records/10656500
+res-nist-am-28,AM Bench 2018 measurement results data: optical microscopy of laser-scanned single tracks on nickel Alloy 625 plates (AMB2018-02),field,True,0,blocked,False,,,,原入口元数据可访问，但当前环境源文件下载服务持续超时；未取得内容，待重试。,https://data.nist.gov/od/id/mds2-3830
+res-nist-am-26,AM Bench 2018 Residual Elastic Strain Measurements of 3D Additive Manufacturing Builds of IN625 Artifacts Using Neutron Diffraction and Synchrotron X-ray Diffraction,field,True,0,blocked,False,,,,原入口元数据可访问，但当前环境源文件下载服务持续超时；未取得内容，待重试。,https://data.nist.gov/od/id/mds2-3052
+res-nist-am-4,AM Bench 2022 3D Build Modeling Challenge Description Data (AMB2022-01),field,True,0,blocked,False,,,,原入口元数据可访问，但当前环境源文件下载服务持续超时；未取得内容，待重试。,https://data.nist.gov/od/id/mds2-2607
+res-nist-am-9,AM Bench 2022 3D Build with Custom Laser Scan Strategies Modeling Challenge (AMB2022-02),field,True,0,blocked,False,,,,原入口元数据可访问，但当前环境源文件下载服务持续超时；未取得内容，待重试。,https://data.nist.gov/od/id/mds2-2617
+res-nist-am-17,AM Bench 2022 ASTM E8 Macroscale Tension at Different Strain Rates on As-built IN625,field,True,0,blocked,False,,,,原入口元数据可访问，但当前环境源文件下载服务持续超时；未取得内容，待重试。,https://data.nist.gov/od/id/mds2-2760
+res-nist-am-15,AM Bench 2022 challenge Macroscale Tensile Tests at Different Orientations (CHAL-AMB2022-04-MaTTO),field,True,0,blocked,False,,,,原入口元数据可访问，但当前环境源文件下载服务持续超时；未取得内容，待重试。,https://data.nist.gov/od/id/mds2-2588
+res-nist-am-14,AM Bench 2022 challenge problem Subcontinuum Mesoscale Tensile Test (CHAL-AMB2022-04-MeTT),field,True,0,blocked,False,,,,原入口元数据可访问，但当前环境源文件下载服务持续超时；未取得内容，待重试。,https://data.nist.gov/od/id/mds2-2587
+res-nist-am-19,AM Bench 2022 IN625 3D Build Microstructure Modeling Challenge Description Data (AMB2022-05),field,True,0,blocked,False,,,,原入口元数据可访问，但当前环境源文件下载服务持续超时；未取得内容，待重试。,https://data.nist.gov/od/id/mds2-2618
+res-nist-am-21,AM Bench 2022 IN625 3D Microstructure Reconstructions,field,True,0,blocked,False,,,,原入口元数据可访问，但当前环境源文件下载服务持续超时；未取得内容，待重试。,https://data.nist.gov/od/id/mds2-2765
+res-nist-am-5,NIST AM Bench · 热像,field,True,0,blocked,False,,,,原入口元数据可访问，但当前环境源文件下载服务持续超时；未取得内容，待重试。,https://data.nist.gov/od/id/mds2-2715
+res-nist-am-10,AM Bench 2022 Measurement Results Data: In-situ Thermography and Scan Strategy for Laser-scanned Single Tracks and Pads on Bare In718 (AMB2022-03),field,True,0,blocked,False,,,,原入口元数据可访问，但当前环境源文件下载服务持续超时；未取得内容，待重试。,https://data.nist.gov/od/id/mds2-2716
+res-nist-am-11,AM Bench 2022 Measurement Results Data: Optical Microscopy of Laser-scanned Single Tracks and Pads (AMB2022-03),field,True,0,blocked,False,,,,原入口元数据可访问，但当前环境源文件下载服务持续超时；未取得内容，待重试。,https://data.nist.gov/od/id/mds2-2718
+res-nist-am-20,AM Bench 2022 Microstructure Measurement Follow-On for AM Bench 2018 IN625 3D Builds,field,True,0,blocked,False,,,,原入口元数据可访问，但当前环境源文件下载服务持续超时；未取得内容，待重试。,https://data.nist.gov/od/id/mds2-2712
+res-nist-am-6,AM Bench 2022 Microstructure Measurements for IN718 3D builds,field,True,0,blocked,False,,,,原入口元数据可访问，但当前环境源文件下载服务持续超时；未取得内容，待重试。,https://data.nist.gov/od/id/mds2-2692
+res-nist-am-7,"AM Bench 2022 Residual Elastic Strain, Residual Stress, and Part Deflection Measurements for IN718 3D Builds",field,True,0,blocked,False,,,,原入口元数据可访问，但当前环境源文件下载服务持续超时；未取得内容，待重试。,https://data.nist.gov/od/id/mds2-2711
+res-nist-am-22,"AM Bench 2022 Vat Photopolymerization Challenge Data: Resin properties, light engine calibration, and calibration print dimensions (AMB2022-07)",field,True,0,blocked,False,,,,原入口元数据可访问，但当前环境源文件下载服务持续超时；未取得内容，待重试。,https://data.nist.gov/od/id/mds2-3032
+res-nist-am-18,AM Bench 2022: In Situ High-energy X-ray Diffraction during Compression of Additively Manufactured Nickel Alloy 625 at Different Temperatures,field,True,0,blocked,False,,,,原入口元数据可访问，但当前环境源文件下载服务持续超时；未取得内容，待重试。,https://data.nist.gov/od/id/mds2-2768
+res-nist-am-8,AM Bench 2022: IN718 Serial Sectioning and X-ray Computed Tomography Measurement Data,field,True,0,blocked,False,,,,原入口元数据可访问，但当前环境源文件下载服务持续超时；未取得内容，待重试。,https://data.nist.gov/od/id/mds2-2767
+res-nist-am-0,AMB2025-02 Macroscale Quasi-Static Tensile Tests of PBF-L IN718,field,True,0,blocked,False,,,,原入口元数据可访问，但当前环境源文件下载服务持续超时；未取得内容，待重试。,https://data.nist.gov/od/id/mds2-3735
+res-nist-am-1,AMB2025-03 High-Cycle Rotating Bending Fatigue Tests of PBF-L Ti-6Al-4V,field,True,0,blocked,False,,,,原入口元数据可访问，但当前环境源文件下载服务持续超时；未取得内容，待重试。,https://data.nist.gov/od/id/mds2-3734
+res-nist-am-2,AMB2025-06 and AMB2025-07 Challenge Problem Calibration Data and Answers,field,True,0,blocked,False,,,,原入口元数据可访问，但当前环境源文件下载服务持续超时；未取得内容，待重试。,https://data.nist.gov/od/id/mds2-3707
+tcm,Anomaly-TCM 冷连轧过程,results,True,10,ready,True,,源文件中的一条记录,顺序取前十条；不代表随机或独立样本。,,https://zenodo.org/records/11469702
+res-nist-am-3,"Asynchronous AM Bench 2022 Challenge Data: Real-time, simultaneous absorptance and high-speed Xray imaging",field,True,0,blocked,False,,,,原入口元数据可访问，但当前环境源文件下载服务持续超时；未取得内容，待重试。,https://data.nist.gov/od/id/mds2-2525
+batchdryer,Batch Dryer,field,True,10,ready,True,,工作簿首个表中的数据行,工作表 Z_operations；可能含说明行，字段与单位需核对。,,https://openmv.net/info/batch-dryer
+res-nist-am-13,"Dynamic Laser Coupling of Scanned Single Tracks on Bare IN718 with Varying Beam Diameter, Scan Speed, and Power",field,True,0,blocked,False,,,,原入口元数据可访问，但当前环境源文件下载服务持续超时；未取得内容，待重试。,https://data.nist.gov/od/id/mds2-3842
+eaf,Electric Arc Furnace 炉次数据,field,True,10,ready,True,False,一个炉次的最终化学测量记录,仅eaf_final_chemical_measurements表，不含完整炉内控制与全部工序。,,https://www.kaggle.com/datasets/yuriykatser/industrial-data-from-the-arc-furnace
+foxconn,Foxconn Injection Molding,field,False,10,ready,False,False,原发布方数据表的一行,,,https://github.com/dengxq888/Injection-Molding-Dataset
+ibidaas,I-BiDaaS CRF 焊接 SCADA,field,True,0,blocked,False,,,,已核查文件形式，尚未接入其压缩／专有格式解析器。 NO_SUPPORTED_PRIMARY_CONTENT_CANDIDATE,https://zenodo.org/records/4265324
+indpensim,IndPenSim,results,True,10,ready,True,,源文件中的一条记录,顺序取前十条；不代表随机或独立样本。,,https://data.mendeley.com/datasets/pdnjz7zz5x/2
+weldir,Laser Welding IR,field,True,10,ready,True,,工作簿首个表中的数据行,工作表 Lötprotokoll；可能含说明行，字段与单位需核对。,,https://zenodo.org/records/1049434
+ldpe,LDPE 过程质量数据,results,True,10,ready,True,False,一次LDPE过程条件与产品性质的配对观测,真实LDPE过程实验表；有匿名索引首列；内容编码导致响应Content-Range字节数与解码后文本长度不同，应流式限额,,https://openmv.net/info/ldpe
+res-nist-am-16,Macroscale Compression at Different Temperatures and Orientations (CHAL-AMB2022-04-MaCTO),field,True,0,blocked,False,,,,原入口元数据可访问，但当前环境源文件下载服务持续超时；未取得内容，待重试。,https://data.nist.gov/od/id/mds2-2681
+meltpool,MeltpoolNet,field,False,10,ready,False,False,原发布方数据表的一行,,,https://github.com/BaratiLab/MeltpoolNet
+milling,MillingToolWear 2020,field,True,0,blocked,False,,,,受限归档读取未得到可解析的数据成员；目录与说明文件未计为样本。 ZIP_NO_VALID_CONTENT:[],https://zenodo.org/records/6505073
+mudestreda,Mudestreda,field,True,10,ready,True,,压缩包中一张源图像的512px缩略图,顺序取前十条；不代表随机或独立样本。,,https://zenodo.org/records/8238653
+nasamilling,NASA Milling,field,True,0,blocked,False,,,,"嵌套数据最小完整成员超过当前受限前缀，未强行整包下载。 NESTED_PREFIX_NO_VALID_CONTENT:[{""member"": ""3. Milling/mill.zip!/mill.mat"", ""reason"": ""COMPLETE_MEMBER_EXCEEDS_PREFIX""}]",https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/pcoe/pcoe-data-set-repository/
+nuaa,NUAA_Ideahouse Tool Wear,field,True,0,blocked,False,,,,IEEE原页明确列出125.22MB ZIP并说明Open Access dataset files are accessible to all logged in users；未登录不能取得文件。,https://ieee-dataport.org/open-access/tool-wear-dataset-nuaaideahouse
+phm2010,PHM 2010 铣刀磨损挑战,field,True,0,blocked,False,,,,PHM官方说明六刀具记录约800MB/个、bZip2；原官方论坛给出的cdn.teamholistic.net/phmconference.org/c1.zip本机证书主机名不匹配，未关闭TLS验证。未取得有效数据，未下载整包。,https://phmsociety.org/phm_competition/2010-phm-society-conference-data-challenge/
+phmap25,PHM Asia-Pacific 2025 切削刀具数据,field,True,0,blocked,False,,,,官方挑战页给出两个Google Drive文件链接，另有队伍注册要求；尚未证实数据文件本身是否公开和压缩成员结构。不能把选手报告PDF作为刀具信号。,https://phmap25.org/datachallenge.html
+injection,Plastic Injection Molding Quality,field,False,10,ready,False,False,原发布方数据表的一行,,,https://github.com/airtlab/machine-learning-for-quality-prediction-in-plastic-injection-molding
+pyscrew,PyScrew,field,True,10,ready,True,,源文件中的一条记录,顺序取前十条；不代表随机或独立样本。,,https://zenodo.org/records/16031381
+qitcemc,QIT-CEMC,field,True,10,ready,True,False,一个切削周期的刀具磨损指标,真实侧刃／端齿磨损标注，源CSV有多行合并表头；需跳过表头后再取十个切削周期，不含对应振动、力和图像,,https://github.com/wwz456/QIT-CEMC-dataset
+slice100k,Slice-100K,workflows,True,0,blocked,False,,,,当前README明确说明2026-03-04起数据入口失效，dataset access link为空；explorer只返回466字节空壳。slicing/example_slice.txt实为SLURM脚本，不是G-code样本，未计入数据预览。,https://github.com/idealab-isu/Slice-100K
+novartis,诺华片剂 1005 批次数据,field,True,0,blocked,False,,,,原数据在Figshare集合，API拒绝、页面空响应；需要取得Laboratory.csv/Process.csv的原文件ID。仅论文文字不算预览。,https://www.nature.com/articles/s41597-022-01203-x
+abc,ABC CAD,results,True,1,partial,True,False,一个真实CAD对象,官方单对象多模态示例，只有1个独立对象，不能算作10条,,https://deep-geometry.github.io/abc-dataset/
+archcad,ArchCAD,results,True,0,blocked,False,,,,公开接口返回401；需核对访问权限或接口状态，未取得内容。 SOURCE_HTTP_401,https://huggingface.co/datasets/jackluoluo/ArchCAD
+cadrecode,CAD-Recode,workflows,True,10,ready,True,False,一个真实训练集CAD程序,官方v1.5逐程序文件；只展示代码，不执行程序或声称已重建实体,,https://github.com/filaPro/cad-recode
+drawing2cad,CAD-VGDrawing,results,True,10,ready,True,False,一个CAD对象的一张真实工程图视图,原作者svg_raw归档前10张视图，来自前三个CAD对象；不能当作10个独立CAD案例。SVG含M/C/L等路径，须白名单提取路径属性后绘制，禁止执行原始SVG脚本或外链。,,https://github.com/lllssc/Drawing2CAD
+technicaldrawings,Cadsy Technical Drawings,results,False,10,ready,False,False,所标明来源中的一条记录,,,https://huggingface.co/datasets/cadsy/cad-technical-drawings
+deepcad,DeepCAD,workflows,False,10,related,False,True,所标明来源中的一条记录,,,https://github.com/rundiwu/DeepCAD
+fusion,Fusion 360 · Reconstruction,workflows,False,6,partial,False,False,一个官方 CAD 示例 JSON 对象,,,https://github.com/AutodeskAILab/Fusion360GalleryDataset
+sketchgraphs,SketchGraphs,results,False,10,related,False,True,所标明来源中的一条记录,,,https://github.com/PrincetonLIPS/SketchGraphs
+thingi,Thingi10K,results,True,10,ready,True,False,一个独立三维打印网格,官方逐对象STL；保留每个对象的原有质量问题和独立许可,,https://github.com/thingi10k/thingi10k
+zerocad,Zero-To-CAD-1M,workflows,False,10,ready,False,False,所标明来源中的一条记录,,,https://huggingface.co/datasets/ADSKAILab/Zero-To-CAD-1m
+deeppcb,DeepPCB,field,False,10,ready,False,False,原发布方的一张实际质检图像,,,https://github.com/tangsanli5201/DeepPCB
+elpv,ELPV,field,False,10,ready,False,False,一个太阳能电池图像及其原始标注,,,https://github.com/zae-bayern/elpv-dataset
+gc10,GC10-DET,field,False,10,related,False,True,所标明来源中的一条记录,,,https://github.com/lvxiaoming2019/GC10-DET-Metallic-Surface-Defect-Datasets
+insplad,InsPLAD,field,True,0,blocked,False,,,,官方仓库将真实数据指向Mendeley 5n3fjgvfyz/1，全集归档里嵌套检测/分类/异常ZIP。已转主审计处理Mendeley入口，不将README案例拼图计为独立数据样本。,https://github.com/andreluizbvs/InsPLAD
+kolektor,KolektorSDD,field,False,10,ready,False,False,所标明来源中的一条记录,,,https://www.vicos.si/resources/kolektorsdd/
+kolektor2,KolektorSDD2,field,False,10,related,False,True,所标明来源中的一条记录,,,https://www.vicos.si/resources/kolektorsdd2/
+magnetictile,Magnetic Tile Defects,field,False,10,ready,False,False,原发布方的一张实际质检图像,,,https://github.com/abin24/Magnetic-tile-defect-datasets.
+mpdd,MPDD,field,True,0,blocked,False,,,,仓库仅README/LICENSE及samples.png拼图；完整数据通过SharePoint共享目录发布，尚未取得可定位的逐图入口或归档成员。拼图不计十条样本。,https://github.com/stepanje/MPDD
+msd,MSD 手机屏幕缺陷,field,True,0,blocked,False,,,,仓库仅说明和samples拼图；MSD.zip约1.57GB超过单文件1GB限制，另有good.zip约27.7MB但OneDrive共享链接需解析真实文件URL，当前尚未取得逐图记录。可优先核查good.zip。,https://github.com/jianzhang96/MSD
+mvtec3d,MVTec 3D-AD,field,True,0,blocked,False,,,,既有原文件入口404；现官网提供登记表和使用条件，未提交表单。,https://www.mvtec.com/research-teaching/datasets/mvtec-3d-ad
+mvtec,MVTec AD,field,False,10,ready,False,False,所标明来源中的一条记录,,,https://www.mvtec.com/research-teaching/datasets/mvtec-ad
+mvtecad2,MVTec AD 2,field,True,0,blocked,False,,,,既有原文件入口404；现官网提供登记表和使用条件，未提交表单。,https://www.mvtec.com/research-teaching/datasets/mvtec-ad-2
+mvtecloco,MVTec LOCO AD,field,True,0,blocked,False,,,,既有原文件入口404；现官网提供登记表和使用条件，未提交表单。,https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad
+neu,NEU 表面缺陷数据库,field,True,10,related,True,True,一张带表面缺陷类别的200x200灰度图,第三方NEU-DET图像及caption派生版，未作原版逐图校验。,,https://faculty.neu.edu.cn/songkechen/zh_CN/zdylm/263270/list/index.htm
+paintdefect,Painted Wood Surface Defects,field,True,10,ready,True,,压缩包中一张源图像的512px缩略图,顺序取前十条；不代表随机或独立样本。,,https://zenodo.org/records/15679291
+pvel,PVEL-AD,field,True,0,blocked,False,,,,官方仓库为README、检测脚本与汇总图；2026年README给出新Google Drive目录，但未得到公开逐图对象。保留新目录入口，不把EL2021类别拼图充当独立图像。,https://github.com/binyisu/PVEL-AD
+realiad,Real-IAD,field,True,4,related,True,True,一张工业异常图像及布尔mask,第三方测试子集；单条响应约6.29MB，请逐条读取。,,https://huggingface.co/datasets/Real-IAD/Real-IAD
+realiadd3,Real-IAD_D3,field,True,0,blocked,False,,,,tree API公开可读，但实际resolve Range请求401；并非仅viewer缺失。未取得原图。,https://huggingface.co/datasets/Real-IAD/Real-IAD_D3
+realiadvariety,Real-IAD_Variety,field,True,0,blocked,False,,,,tree API公开可读，但实际resolve Range请求401；并非仅viewer缺失。未取得原图。,https://huggingface.co/datasets/Real-IAD/Real-IAD_Variety
+wooddefect,Sawn Timber Surface Defects,field,True,3,partial,True,,压缩包中一张源图像的512px缩略图,顺序取前十条；不代表随机或独立样本。,,https://zenodo.org/records/4694695
+sdnet,SDNET2018,field,True,0,blocked,False,,,,原大学页面明确列出SDNET2018.zip约515903kB及ReadMe；官方ZIP链接本机HTTP403，未取得任何真实图片。,https://digitalcommons.usu.edu/all_datasets/48/
+sensum,SensumSODF,field,True,0,blocked,False,,,,官方页面明确要求填写英文下载申请，核查许可合规后数日内邮件发链接；本轮未提交个人信息或发邮件。,https://www.sensum.eu/sensumsodf-dataset/
+stitching,StitchingNet,field,True,10,ready,True,False,一张独立的缝纫针迹照片,官方公开的114张示例子集；十张来自A面料组，不代表全类别,,https://github.com/hyungjungkim/StitchingNet-dataset
+visa,VisA,field,True,10,related,True,True,一张PCB质检图和配套异常掩膜,第三方VisA图像及掩膜转换版，未逐图校验原始字节。,,https://github.com/amazon-science/spot-diff
+xsteel,X-SDD,field,False,10,ready,False,False,原发布方的一张实际质检图像,,,https://github.com/Fighter20092392/X-SDD-A-New-benchmark
+hotcrack,焊接热裂纹语义分割,field,True,3,partial,True,,压缩包中一张源图像的512px缩略图,顺序取前十条；不代表随机或独立样本。,,https://zenodo.org/records/16919145
