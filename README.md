@@ -8,10 +8,12 @@
 
 预览包含窗口、切片、视图及关联转换版本，不等于独立案例，不代表完整数据或质量验收。来源关系、取样范围与许可线索保留在对应资源中；数据的权利和使用条件以原发布方为准。本仓库未对第三方数据重新授予许可。
 
+[下载与访问核查](docs/download-access.html)逐项覆盖298项资源：188项已有代表性数据文件读取证据，5项只有部分内容读取证据，105项尚未确认下载。每项保留渠道、范围、受限原因及人工复核建议。[全部核查CSV](docs/download-access.csv)与[人工筛查CSV](docs/download-review.csv)可离线使用。核查日期：2026-10-31。匿名GET只读取数据文件前4KiB，不代表整库或许可验收。
+
 审核意见仅保存于访问者当前浏览器，可自行导出，不会提交到GitHub或其他服务。
 
 ## 发布与维护
 
-GitHub Pages从main分支的docs目录发布。index.html为完整独立页面，内嵌轻量真实样本；preview-audit.html和preview-audit.csv为可检索、可下载的资源目录。无需构建或安装依赖。源码核查日期：2026-10-18；部署日期：2026-10-20。
+GitHub Pages从main分支的docs目录发布。index.html为完整独立页面，内嵌轻量真实样本；preview-audit.html和preview-audit.csv为可检索、可下载的资源目录。无需构建或安装依赖。样本预览核查日期：2026-10-18；下载权限核查日期：2026-10-31。
 
 页面由本地研究工作区的scripts/build-local.mjs生成，经validate-local.mjs、validate-domains.mjs、verify-data-visuals.mjs及validate-snapshots.mjs检查后，由scripts/prepare-github-pages.py导出。领域映射由scripts/classify-domains.py维护，分类日期为2026-10-20。本仓库仅保存发布产物，更新时应先修改并验证本地源文件，再同步docs目录。
