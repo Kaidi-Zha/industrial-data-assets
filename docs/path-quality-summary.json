@@ -1,0 +1,80 @@
+{
+  "date": "2026-11-07",
+  "sourceSha256": "f2bb21755b4d837158e2df86b0b76a0eb196fffa6a23382a3619afc642e4ec93",
+  "scope": "Existing generic catalog priority labels intersected with route tags; not separately validated quality per route. Full registered resource bytes, not prepared train/test splits.",
+  "unit": "TiB=2^40 bytes",
+  "qualityAcceptanceRate": null,
+  "rows": [
+    {
+      "path": "pretrain",
+      "name": "预训练",
+      "count": 252,
+      "exactCount": 141,
+      "exactTiB": 1376.8952938995144,
+      "approxCount": 29,
+      "approxTiB": 1019.9130883847829,
+      "unknownCount": 82,
+      "knownTiB": 2396.8083822842973,
+      "priorityCount": 76,
+      "priorityCountPercent": 30.158730158730158,
+      "priorityTiB": 2114.507686455183,
+      "priorityVolumePercent": 88.22180788770167,
+      "otherCount": 176,
+      "otherCountPercent": 69.84126984126983,
+      "routeStatuses": {
+        "建议用途": 251,
+        "需构造任务/评分环境": 1
+      },
+      "priorityLicenseNotConfirmed": 0
+    },
+    {
+      "path": "post-train",
+      "name": "后训练",
+      "count": 348,
+      "exactCount": 204,
+      "exactTiB": 1376.2688183250684,
+      "approxCount": 29,
+      "approxTiB": 1019.9130883847829,
+      "unknownCount": 115,
+      "knownTiB": 2396.1819067098513,
+      "priorityCount": 85,
+      "priorityCountPercent": 24.42528735632184,
+      "priorityTiB": 2114.6298498947526,
+      "priorityVolumePercent": 88.24997150564032,
+      "otherCount": 263,
+      "otherCountPercent": 75.57471264367815,
+      "routeStatuses": {
+        "条件用途": 318,
+        "建议用途": 28,
+        "需构造任务/评分环境": 1,
+        "官方任务": 1
+      },
+      "priorityLicenseNotConfirmed": 4
+    },
+    {
+      "path": "evaluation",
+      "name": "评测",
+      "count": 284,
+      "exactCount": 164,
+      "exactTiB": 1314.6194540893484,
+      "approxCount": 28,
+      "approxTiB": 565.1657374983188,
+      "unknownCount": 92,
+      "knownTiB": 1879.7851915876672,
+      "priorityCount": 83,
+      "priorityCountPercent": 29.225352112676056,
+      "priorityTiB": 1659.3588453360107,
+      "priorityVolumePercent": 88.27385452135175,
+      "otherCount": 201,
+      "otherCountPercent": 70.77464788732394,
+      "routeStatuses": {
+        "需固定评测协议": 270,
+        "建议用途": 4,
+        "官方任务": 8,
+        "需构造任务/评分环境": 1,
+        "条件用途": 1
+      },
+      "priorityLicenseNotConfirmed": 5
+    }
+  ]
+}

@@ -26,6 +26,10 @@ GitHub Pages从main分支的docs目录发布。index.html为完整独立页面�
 
 核查日期：2026-11-07。CSV/JSON目录、逐文件下载清单、排除记录与HEAD核查摘要随网页提供。元数据和小前缀检查不等于整库已下载。本地未下载完整工业数据包。
 
+## 数据量与质量
+
+[三条路径统计](docs/training-catalog.html#path-statistics)分别展示预训练、后训练与评测的登记容量、优先候选数量及容量占比，并提供质量判断标准。用途标签可以重叠，容量不能跨路径相加。候选占比不是实际质量验收通过率；实际通过率尚未知。[统计依据JSON](docs/path-quality-summary.json)随页提供。
+
 ## 使用许可
 
 [逐项许可核查](docs/license-audit.html)覆盖365项资源，提供研究、商业使用、修改、再分发、官方依据和核查日期。已核实声明不等于每条样本权利链已完成审计。结果计数：{"confirmed": 200, "unverified": 136, "conditional": 21, "conflict": 8}。CSV与JSON随页提供。
