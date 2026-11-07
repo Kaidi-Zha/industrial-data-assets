@@ -1,6 +1,6 @@
 # 工业数据资源与样本库
 
-[浏览网页](https://kaidi-zha.github.io/industrial-data-assets/)
+[浏览样本](https://kaidi-zha.github.io/industrial-data-assets/) · [训练与评测目录](https://kaidi-zha.github.io/industrial-data-assets/training-catalog.html)
 
 298项登记资源，分为工业软件和结果数据、工业软件工作流数据、现场数据、文本类／代码类数据。目录记录208项可预览资源和2,005条预览，其中136项、1,289条已内置于页面；其余预览按需连接公开接口，可能受网络、跨域与发布方权限影响。90项仅提供来源和获取条件。
 
@@ -17,3 +17,11 @@
 GitHub Pages从main分支的docs目录发布。index.html为完整独立页面，内嵌轻量真实样本；preview-audit.html和preview-audit.csv为可检索、可下载的资源目录。无需构建或安装依赖。样本预览核查日期：2026-10-18；下载权限核查日期：2026-10-31。
 
 页面由本地研究工作区的scripts/build-local.mjs生成，经validate-local.mjs、validate-domains.mjs、verify-data-visuals.mjs及validate-snapshots.mjs检查后，由scripts/prepare-github-pages.py导出。领域映射由scripts/classify-domains.py维护，分类日期为2026-10-20。本仓库仅保存发布产物，更新时应先修改并验证本地源文件，再同步docs目录。
+
+## 训练与评测目录
+
+365项资源，保留原十领域及四类数据分类，增加pretrain、post-train、evaluation的用途、依据和条件。218项有文件字节数，29项为发布方约数，118项完整大小待核实。
+
+600 TiB目标采用独立可复核口径：新登记16项S3范围、2175个文件，合计1232.64 TiB。全部文件HEAD响应200且Content-Length与对象清单一致。排除指定范围之外的历史版、镜像、聚合及重复ETag，不加入历史容量、官方约数、需授权数据或父平台容量。未执行全库语义去重或原始内容质量验收。
+
+核查日期：2026-11-07。CSV/JSON目录、逐文件下载清单、排除记录与HEAD核查摘要随网页提供。元数据和小前缀检查不等于整库已下载。本地未下载完整工业数据包。
